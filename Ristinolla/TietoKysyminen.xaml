@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ristinolla.TietoKysyminen"
+             Title="TietoKysyminen">
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!--Pelaaja 1-->
+        <Label Text="Pelaaja 1 Tiedot" 
+               Grid.Column="0"
+               Grid.Row="0"
+               />
+                
+        <Label Text="Etunimi"
+               Grid.Row="1"
+               Grid.Column="0"/>
+        <Entry Placeholder="Essi" x:Name="Pelaaja1EtuNimi" 
+               Grid.Row="1" 
+               Grid.Column="1"
+               Text=""/>
+        
+        <Label Text="Sukunimi" 
+               Grid.Row="1" 
+               Grid.Column="2" />
+        <Entry Placeholder="Esimerkki" x:Name="Pelaaja1SukuNimi" 
+               Grid.Row="1" 
+               Grid.Column="3" 
+               Text=""/>
+        <Label Text="Syntymävuosi"
+               Grid.Row="1" 
+               Grid.Column="4"/>
+        <Entry Placeholder="1999"
+               Grid.Row="1" 
+               Grid.Column="5" x:Name="Pelaaja1Syntymäaika"
+               Text=""
+               />
+        <Button Text="Tallenna Pelaaja 1 tiedot"  x:Name="P1Tallentaja" Clicked="P1Tallentaja_Clicked" Grid.Row="1" Grid.Column="6"/>
+        <ListView
+            VerticalScrollBarVisibility="Always"
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    Grid.ColumnSpan="5"
+                    Grid.RowSpan="1"
+                    BackgroundColor="HotPink"
+                    x:Name="ListaKurkkaaja1" 
+            ItemSelected="ListaKurkkaaja1_ItemSelected"
+                    />
+        <ListView
+            VerticalScrollBarVisibility="Always"
+                    Grid.Row="3"
+                    Grid.Column="3"
+                    Grid.ColumnSpan="5"
+                    Grid.RowSpan="1"
+                    BackgroundColor="HotPink"
+                    x:Name="ListaKurkkaaja2" 
+            ItemSelected="ListaKurkkaaja2_ItemSelected" >
+        </ListView>
+        <!--Pelaaja 2-->
+        <Label Text="Pelaaja 2 Tiedot" 
+               Grid.Column="0"
+               Grid.Row="3"
+               x:Name ="Pelaaja2TiedotTeksti"/>
+        <Label Text="Etunimi"
+               Grid.Row="4"
+               Grid.Column="0"
+               x:Name="Pelaaja2EtuNimiTeksti"/>
+        <Entry Placeholder="Essi" x:Name="Pelaaja2EtuNimi" 
+               Grid.Row="4" 
+               Grid.Column="1"
+               Text=""/>
+        <Label Text="Sukunimi" 
+               Grid.Row="4" 
+               Grid.Column="2"
+               x:Name="Pelaaja2SukuNimiTeksti"/>
+        <Entry Placeholder="Esimerkki" x:Name="Pelaaja2SukuNimi" 
+               Grid.Row="4" 
+               Grid.Column="3"
+               Text=""/>
+        <Label Text="Syntymävuosi"
+               Grid.Row="4" 
+               Grid.Column="4"
+               x:Name="Pelaaja2Syntymäaikateksti"/>
+        <Entry Placeholder="1999"
+               Grid.Row="4" 
+               Grid.Column="5" x:Name="Pelaaja2Syntymäaika"
+               Text=""
+               />
+        <Button Text="Tallenna Pelaaja 2 tiedot"  x:Name="P2Tallentaja" Clicked="P2Tallentaja_Clicked" Grid.Row="4" Grid.Column="6"/>
+        <Button Text="Haluan Pelata O:lla" x:Name="OnValitsija" Clicked="OnValitsija_Clicked" Grid.Row="2" Grid.Column="6" IsEnabled="False" Opacity="0"/>
+    </Grid>
+
+</ContentPage>

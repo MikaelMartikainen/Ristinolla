@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ristinolla.MainPage">
+ 
+
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Aloita Alusta" >
+            <MenuFlyoutItem Text="Aloita Alusta"
+                            Clicked="AlustaAloittaja_Clicked"/>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+  
+    
+    <ScrollView>
+        <HorizontalStackLayout>
+         
+        <Grid x:Name="Ristinolla"
+              HorizontalOptions="Start"
+              VerticalOptions="StartAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" /> 
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="200" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="200" />
+               
+            </Grid.RowDefinitions>
+            <!--napit ja kuvat nimetty sijainnin mukaan-->
+                <Image Source="ristinollapohja.png"
+       Grid.Row="0"
+       Grid.Column="0"
+       Grid.ColumnSpan="3"
+       Grid.RowSpan="3"/>
+                <Button Text=""
+                    Background="AliceBlue"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    x:Name="Nappi00"
+                    Clicked="Nappi00_Clicked"
+                    FontSize="25"
+                    BorderColor="red"
+                    BorderWidth="1"
+                    Opacity="0"/>
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Source="dotnet_bot"
+                    Aspect="Fill"
+                    x:Name="kuva00"
+                    Scale="0.90"/>
+            
+                <Button Text=""
+                    Background="AliceBlue"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    x:Name="Nappi01"
+                    Clicked="Nappi01_Clicked"
+                    FontSize="25"
+                    BorderColor="red"
+                    BorderWidth="1"
+                        Opacity="0"
+                     />
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Source="dotnet_bot"
+                    Aspect="Fill"
+                    x:Name="kuva01"
+                    Scale="0.90"
+                    />
+
+                <Button Text=""
+                    Background="AliceBlue"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    x:Name="Nappi02"
+                    Clicked="Nappi02_Clicked"
+                    FontSize="25"
+                    BorderColor="red"
+                    BorderWidth="1"
+                        Opacity="0"
+                     />
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Source="dotnet_bot"
+                    Aspect="Fill"
+                    x:Name="kuva02"
+                    Scale="0.90"/>
+                <Button Text=""
+                    Background="AliceBlue"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    x:Name="Nappi10"
+                    Clicked="Nappi10_Clicked"
+                    FontSize="25"
+                     BorderColor="red"
+                    BorderWidth="1"
+                        Opacity="0"
+                     />
+                <Image
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Source="dotnet_bot"
+                    Aspect="Fill"
+                    x:Name="kuva10"
+                    Scale="0.90"/>
+                <Button Text=""
+                    Background="AliceBlue"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    x:Name="Nappi11"
+                    Clicked="Nappi11_Clicked"
+                    FontSize="25"
+                    BorderWidth="1"
+                     BorderColor="red"
+                        Opacity="0"
+                     />
+                <Image
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Source="dotnet_bot"
+                    Aspect="Fill"
+                    x:Name="kuva11"
+                    Scale="0.90"/>
+                <Button Text=""
+                    Background="AliceBlue"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    x:Name="Nappi12"
+                    Clicked="Nappi12_Clicked"
+                    FontSize="25"
+                    BorderColor="red"
+                    BorderWidth="1"
+                        Opacity="0"
+                     />
+                <Image
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Source="dotnet_bot"
+                    Aspect="Fill"
+                    x:Name="kuva12"
+                    Scale="0.90"/>
+                <Button Text=""
+                    Background="AliceBlue"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    x:Name="Nappi20"
+                    Clicked="Nappi20_Clicked"
+                    FontSize="25"
+                     BorderColor="red"
+                    BorderWidth="1"
+                        Opacity="0"
+                     />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Source="dotnet_bot"
+                    Aspect="Fill"
+                    x:Name="kuva20"
+                    Scale="0.90"/>
+                <Button Text=""
+                    Background="AliceBlue"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    x:Name="Nappi21"
+                    Clicked="Nappi21_Clicked"
+                    FontSize="25"
+                    BorderWidth="1"
+                     BorderColor="red"
+                        Opacity="0"
+                     />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Source="dotnet_bot"
+                    Aspect="Fill"
+                    x:Name="kuva21"
+                    Scale="0.90"/>
+                <Button Text=""
+                    Background="AliceBlue"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    x:Name="Nappi22"
+                    Clicked="Nappi22_Clicked"
+                    FontSize="25"
+                     BorderColor="red"
+                    BorderWidth="1"
+                        Opacity="0"
+                     />
+                <Image
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Source="dotnet_bot"
+                    Aspect="Fill"
+                    x:Name="kuva22"
+                    Scale="0.90"/>
+
+            </Grid>
+            <Grid x:Name="Tietoja"  
+              HorizontalOptions="EndAndExpand"
+              VerticalOptions="StartAndExpand"
+                  Margin="40"
+              >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                 <ColumnDefinition Width="*" />
+                 <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label x:Name=" VuoronKertoja"
+                   Text="X:n vuoro"
+                   FontSize="40"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+                <ListView     
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="3"
+                    Grid.RowSpan="3"
+                    BackgroundColor="HotPink"
+                    x:Name="ListaKurkkaaja" 
+                    ItemSelected="ListaKurkkaaja_ItemSelected"   
+                    />
+
+
+            </Grid>
+            
+
+    </HorizontalStackLayout>
+    </ScrollView>
+
+</ContentPage>
