@@ -29,7 +29,7 @@
                 <RowDefinition Height="200" />
                
             </Grid.RowDefinitions>
-            <!--napit ja kuvat nimetty sijainnin mukaan-->
+            <!-- Kommentti : napit ja kuvat nimetty sijainnin mukaan-->
                 <Image Source="ristinollapohja.png"
        Grid.Row="0"
        Grid.Column="0"
